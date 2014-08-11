@@ -1,4 +1,5 @@
 'use strict'
 
 
-alert('at the start');
+var t = require('./local-components/buses/bus.jade')('bacon');
+console.log(t);

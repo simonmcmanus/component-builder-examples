@@ -58,15 +58,40 @@ require.register("./local-components/buses", function (exports, module) {
 
 });
 
-require.register("./local-components/trains", function (exports, module) {
+
+
+
+require.define("./local-components/buses/bus.jade", function template(locals) {
+var buf = [];
+var jade_mixins = {};
+
+buf.push("<li><a href=\"#\">275</a></li>");;return buf.join("");
+});
+
+
+require.define("./local-components/buses/buses.jade", function template(locals) {
+var buf = [];
+var jade_mixins = {};
+
+buf.push("<div id=\"buses\"><h1>hi i am in your search</h1><div><ul><li><a href=\"#\">21</a></li><li><a href=\"#\">20</a></li><li><a href=\"#\">275</a></li></ul></div></div>");;return buf.join("");
+});require.register("./local-components/trains", function (exports, module) {
 
 });
 
-require.register("homepage", function (exports, module) {
+
+
+
+require.define("./local-components/trains/train.jade", function template(locals) {
+var buf = [];
+var jade_mixins = {};
+
+buf.push("<h1><hi>my name id + sd</hi></h1>");;return buf.join("");
+});require.register("homepage", function (exports, module) {
 'use strict'
 
 
-alert('at the start');
+var t = require('./local-components/buses/bus.jade')('bacon');
+console.log(t);
 
 });
 

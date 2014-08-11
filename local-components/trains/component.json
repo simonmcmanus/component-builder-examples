@@ -6,6 +6,6 @@
     "index.css"
   ],
   "templates": [
-      "index.jade"
+      "train.jade"
   ]
 }

@@ -9,9 +9,6 @@
   "dependancies": {
     "/components/jquery": "*"
   },
-  "templates": [
-      "./views/index.jade"
-  ],
   "scripts": [
     "./start.js"
   ]
