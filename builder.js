@@ -27,6 +27,7 @@ resolve(process.cwd(), {
        }
 
        var out = build.scripts.require + string;
+       out += 'require("homepage");';
        fs.writeFileSync(outFolder + 'build.js', out);
      });
 

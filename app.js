@@ -23,7 +23,6 @@ app.configure(function(){
 });
 
 
-console.log(__dirname + '/build');
 app.use(express.static(__dirname + '/build'));
 
 app.configure('development', function(){
