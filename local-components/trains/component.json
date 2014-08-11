@@ -1,0 +1,11 @@
+{
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "index.css"
+  ],
+  "templates": [
+      "index.jade"
+  ]
+}
