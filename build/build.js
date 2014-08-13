@@ -52,7 +52,7 @@ require.define = function (name, exports) {
     exports: exports
   };
 };
-require.register("./local-components/buses", function (exports, module) {
+require.register("./c/buses", function (exports, module) {
 'use strict';
 
 
@@ -61,36 +61,52 @@ require.register("./local-components/buses", function (exports, module) {
 
 
 
-require.define("./local-components/buses/bus.jade", function template(locals) {
+require.define("./c/buses/bus.jade", function template(locals) {
 var buf = [];
 var jade_mixins = {};
+var jade_interp;
 
 buf.push("<li><a href=\"#\">275</a></li>");;return buf.join("");
 });
 
 
-require.define("./local-components/buses/buses.jade", function template(locals) {
+require.define("./c/buses/buses.jade", function template(locals) {
 var buf = [];
 var jade_mixins = {};
+var jade_interp;
 
 buf.push("<div id=\"buses\"><h1>hi i am in your search</h1><div><ul><li><a href=\"#\">21</a></li><li><a href=\"#\">20</a></li><li><a href=\"#\">275</a></li></ul></div></div>");;return buf.join("");
-});require.register("./local-components/trains", function (exports, module) {
+});require.register("./c/search", function (exports, module) {
 
 });
 
 
 
 
-require.define("./local-components/trains/train.jade", function template(locals) {
+require.define("./c/search/search.jade", function template(locals) {
 var buf = [];
 var jade_mixins = {};
+var jade_interp;
+;var locals_for_with = (locals || {});(function (value) {
+buf.push("<input" + (jade.attr("value", value, true, false)) + "/><input type=\"submit\"/>");}("value" in locals_for_with?locals_for_with.value:typeof value!=="undefined"?value:undefined));;return buf.join("");
+});require.register("./c/trains", function (exports, module) {
+
+});
+
+
+
+
+require.define("./c/trains/train.jade", function template(locals) {
+var buf = [];
+var jade_mixins = {};
+var jade_interp;
 
 buf.push("<h1><hi>my name id + sd</hi></h1>");;return buf.join("");
-});require.register("homepage", function (exports, module) {
+});require.register("homepage/./start.js", function (exports, module) {
 'use strict'
 
 
-var t = require('./local-components/buses/bus.jade')('bacon');
+var t = require('./local-components/buses')('bacon');
 console.log(t);
 
 });

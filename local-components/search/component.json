@@ -1,0 +1,13 @@
+{
+  "name": "search",
+  "scripts": [
+    "search.js"
+  ],
+  "styles": [
+    "search.scss"
+  ],
+  "templates": [
+      "search.jade"
+  ]
+
+}

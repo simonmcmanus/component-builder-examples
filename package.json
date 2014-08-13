@@ -9,5 +9,10 @@
     "component": "^0.19.9",
     "express": "3.0.0rc5",
     "jade": "*"
+  },
+  "devDependencies": {
+    "component-builder": "^1.1.10",
+    "component-builder-sass": "^0.1.1",
+    "component-resolver": "1.1.8"
   }
 }

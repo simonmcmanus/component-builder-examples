@@ -1,5 +1,5 @@
 'use strict'
 
 
-var t = require('./local-components/buses/bus.jade')('bacon');
+var t = require('./local-components/buses')('bacon');
 console.log(t);

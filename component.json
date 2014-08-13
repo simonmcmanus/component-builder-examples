@@ -4,8 +4,10 @@
   "paths": ["local-components"],
   "locals": [
     "buses",
+    "search",
     "trains"
   ],
+  "main": "start.js",
   "dependancies": {
     "/components/jquery": "*"
   },
