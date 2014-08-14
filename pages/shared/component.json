@@ -1,12 +1,11 @@
 {
-  "name": "homepage",
+  "name": "shared",
   "private": true,
   "paths": ["local-components"],
-  "main": "start.js",
   "dependencies": {
     "components/jquery": "*"
   },
-  "scripts": [
-    "./start.js"
+  "locals": [
+    "header"
   ]
 }

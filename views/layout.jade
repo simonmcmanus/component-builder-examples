@@ -2,8 +2,15 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/build.css')
+    link(rel='stylesheet', href='/shared.css')
+    link(rel='stylesheet', href='/home.css')
   body
+    header
+      include ../local-components/header/header.jade
     block content
-    script(src='/build.js')
+    script(src='/shared.js')
+    script(src='/home.js')
+    script.
+      -require('home')
+
 

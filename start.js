@@ -1,5 +1,8 @@
 'use strict'
 
 
-var t = require('./local-components/buses')('bacon');
-console.log(t);
+var header = require('./local-components/header');
+var $ = require('components/jquery');
+header.init($('header'));
+
+alert('hi home page');

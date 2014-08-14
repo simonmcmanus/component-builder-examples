@@ -1,0 +1,10 @@
+{
+  "name": "home",
+  "private": true,
+  "paths": ["local-components"],
+  "locals": [
+    "buses",
+    "search",
+    "trains"
+  ]
+}

@@ -2,4 +2,6 @@ Experimenting with Component Builder.
 
 http://component.io
 
-Check the branches.
+Had to tie down versions cause I suspect there are some big API changes.
+
+

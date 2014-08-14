@@ -1,0 +1,15 @@
+{
+  "name": "nav",
+  "auto": true,
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "index.scss"
+  ],
+  "templates": [
+      "nav.jade"
+  ],
+  "main": "index.js"
+
+}

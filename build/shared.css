@@ -1,0 +1,13 @@
+ul li {
+  display: inline;
+  margin: 10px;
+  padding: 10px; }
+
+li {
+  border: 1px solid red; }
+
+
+header {
+  border: 1px solid pink; }
+
+
